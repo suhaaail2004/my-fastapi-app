@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: my-fastapi-app
-          image: 8089278330/my-fastapi-app:1
+          image: 8089278330/my-fastapi-app:2
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
