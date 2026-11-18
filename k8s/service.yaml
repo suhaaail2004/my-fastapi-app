@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-fastapi-service
+  labels:
+    app: my-fastapi-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: my-fastapi-app
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8000
